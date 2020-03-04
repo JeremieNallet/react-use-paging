@@ -3,11 +3,10 @@ import usePagination from 'use-pagination';
 
 const App = () => {
     const myArrayOfThings = [
-        { id: 1, title: 'first' },
-        { id: 2, title: 'second' },
-        { id: 3, title: 'third' },
-        { id: 4, title: 'fourth' },
-        { id: 5, title: 'fith' }
+        { id: 1, title: 'list item 1' },
+        { id: 2, title: 'list item 2' },
+        { id: 3, title: 'list item 3' },
+        { id: 4, title: 'list item 4' }
     ];
 
     const { items, pages, setCurrentPage, currentPage } = usePagination(

@@ -7,7 +7,7 @@ const paginate = (items, currentPage, resultPerPage) => {
             items: items.slice(startIndex, startIndex + resultPerPage)
         };
     } else {
-        throw new Error(`Items is not an array.`);
+        throw new Error(`Array is required.`);
     }
 };
 
@@ -17,18 +17,18 @@ const usePagination = (
 ) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPage, setTotalPage] = useState(null);
-    const [checkPageEmpty, setCheckPageEmpty] = useState(null);
+    const [pageCount, setPageCount] = useState(null);
 
     const { items } = paginate(initialArray, currentPage, resultPerPage);
     const [pages, setPages] = useState([]);
 
     useEffect(() => {
         setTotalPage(Math.ceil(initialArray.length / resultPerPage));
-        setCheckPageEmpty(totalPage === 1 && !alwaysVisible ? 0 : totalPage);
-        setPages([...Array(checkPageEmpty).keys()].map(key => key + 1));
+        setPageCount(totalPage === 1 && !alwaysVisible ? 0 : totalPage);
+        setPages([...Array(pageCount).keys()].map(key => key + 1));
     }, [
         alwaysVisible,
-        checkPageEmpty,
+        pageCount,
         initialArray.length,
         totalPage,
         resultPerPage
