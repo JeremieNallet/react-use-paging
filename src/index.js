@@ -15,9 +15,9 @@ const usePagination = (
     initialArray = [],
     { resultPerPage = 1, alwaysVisible = true }
 ) => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const [totalPage, setTotalPage] = useState(0);
-    const [checkPageEmpty, setCheckPageEmpty] = useState(0);
+    const [currentPage, setCurrentPage] = useState(null);
+    const [totalPage, setTotalPage] = useState(null);
+    const [checkPageEmpty, setCheckPageEmpty] = useState(null);
 
     const { items } = paginate(initialArray, currentPage, resultPerPage);
     const [pages, setPages] = useState([]);
