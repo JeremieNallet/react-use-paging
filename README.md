@@ -2,6 +2,8 @@
 
 [![NPM](https://img.shields.io/npm/v/typer.svg)](https://www.npmjs.com/package/react-use-paging) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+![demo](https://media.giphy.com/media/H1BVNub8Z4AD2SEHAL/giphy.gif)
+
 Quick and easy react hook to implement pagination as a list.
 
 ## Install
