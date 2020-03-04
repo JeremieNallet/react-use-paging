@@ -26,7 +26,7 @@ const MyComponent = () => {
         myArrayOfThings,
         {
             resultPerPage: 2,
-            alwaysVisible: false // when false page n1 won't show if all results holds in one page
+            alwaysVisible: false // First page won't show if all results are in one page.
         }
     );
     return (
@@ -56,12 +56,12 @@ const MyComponent = () => {
 
 ### Options
 
-| Name          | Type        | Default value | Is Required | Description                            |
-| ------------- | ----------- | ------------- | ----------- | -------------------------------------- |
-| [ ... ]       | Array       | [ ]           | Yes         | Content you want to be paginate.       |
-| { ... }       | Object      | {}            | Yes         | Options eg. result per pages.          |
-| resultPerPage | Number (ms) | 2             | No          | Speed at which letters will be typed.  |
-| alwaysVisible | Number (ms) | true          | No          | Speed at which letters will be erased. |
+| Name          | Type        | Default value | Is Required | Description                                           |
+| ------------- | ----------- | ------------- | ----------- | ----------------------------------------------------- |
+| [ ... ]       | Array       | [ ]           | Yes         | Content you want to be paginate.                      |
+| { ... }       | Object      | {}            | Yes         | Options eg. result per pages.                         |
+| resultPerPage | Number (ms) | 2             | No          | Number of result per page.                            |
+| alwaysVisible | Number (ms) | true          | No          | First page won't show if all results are in one page. |
 
 ## License
 
