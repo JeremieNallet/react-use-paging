@@ -58,12 +58,12 @@ const MyComponent = () => {
 
 ### Options
 
-| Name          | Type    | Default value | Is Required | Description                                           |
-| ------------- | ------- | ------------- | ----------- | ----------------------------------------------------- |
-| [ ... ]       | Array   | [ ]           | Yes         | Content you want to be paginated.                     |
-| { ... }       | Object  | {}            | Yes         | Options, eg. result per pages.                        |
-| resultPerPage | Number  | 2             | No          | Number of result per page.                            |
-| alwaysVisible | Boolean | true          | No          | First page won't show if all results are in one page. |
+| Name          | Type    | Default value | Is Required | Description                                                          |
+| ------------- | ------- | ------------- | ----------- | -------------------------------------------------------------------- |
+| [ ... ]       | Array   | [ ]           | Yes         | Content you want to be paginated.                                    |
+| { ... }       | Object  | {}            | Yes         | Options, can be empty but required.                                  |
+| resultPerPage | Number  | 2             | No          | Number of result per page.                                           |
+| alwaysVisible | Boolean | true          | No          | if false first page won't show if all results are shown in one page. |
 
 ## License
 
