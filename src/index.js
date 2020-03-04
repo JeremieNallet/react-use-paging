@@ -15,7 +15,7 @@ const usePagination = (
     initialArray = [],
     { resultPerPage = 1, alwaysVisible = true }
 ) => {
-    const [currentPage, setCurrentPage] = useState(null);
+    const [currentPage, setCurrentPage] = useState(1);
     const [totalPage, setTotalPage] = useState(null);
     const [checkPageEmpty, setCheckPageEmpty] = useState(null);
 
